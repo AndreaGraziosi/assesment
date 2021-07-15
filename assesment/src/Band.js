@@ -8,10 +8,10 @@ function Band(props) {
   return (
     <div>
       
-      <h3>{band_name}</h3>
-      <p>{formed}</p>
-      <p>{origin}</p>
-      <div>{fans}</div>
+      <h3>Band name: {band_name}</h3>
+      <p>Formed: {formed}</p>
+      <p>Origin: {origin}</p>
+      <div>Fans: {fans}</div>
     </div>
   )
 }

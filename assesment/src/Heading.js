@@ -7,6 +7,7 @@ function Heading() {
     <div className='Heading'>
       <h1>FEW 1.2 Final Assesment</h1>
       <p>Andrea Graziosi</p>
+    
     </div>
   )
 }

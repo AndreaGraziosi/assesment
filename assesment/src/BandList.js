@@ -1,40 +1,31 @@
 
 import React from 'react';
 import Band from './Band';
-// import './BandList.css';
+import './BandList.css';
 import data from './metal.json'
 
 
-
-
 function BandList() {
+
+  const bands = data.map((obj) => {
+    return (
+      <Band
+        key={obj.band_name}
+        band_name={obj.band_name}
+        formed={obj.formed}
+        origin={obj.origin}
+        fans={obj.fans}
+      />
+    )
+  })
+
   return (
     <div className="BandList">
-      <Band
-        band_name="50 California Street"
-        fans="50 California St."
-        formed="50-california-st.jpg"
-        origin="bosnia"
-      />
-     
+      { bands }
     </div>
   )
-}
+  }
+export default BandList;
 
 
 
-
-
-// const  band = data.map(( { ID, band_name, formed, origin, fans } ) => {
-    // return (
-  //     <Band
-  //       ID={ID} // The title could be a key
-  //       band_name={band_name}
-  //       formed={formed}
-  //       origin={origin}
-  //       fans={fans}
-  //     />
-  //   )
-  // })
-
-export default BandList
