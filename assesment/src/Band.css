@@ -1,17 +1,10 @@
-.Band {
-    position: relative;
-}
-.Band  {
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-}
 
-.Band h1 {
+
+.Band h3 {
     margin: 0;
-    font-weight: lighter;
+    font-weight:bolder;
     background-color: rgba(255, 255, 255, 0.9);
     padding: 0.5rem;
-    text-align: left;
+    text-align: center;
+    color:darkorchid;
 }

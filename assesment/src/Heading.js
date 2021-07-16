@@ -1,6 +1,7 @@
 // src/Title.js
 
 import React from 'react'
+import './Heading.css'
 
 function Heading() {
   return (

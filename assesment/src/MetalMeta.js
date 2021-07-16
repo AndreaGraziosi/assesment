@@ -7,4 +7,4 @@ function MetalMeta() {
 
 }
 
-export default POPOSList
+export default Metalmeta
