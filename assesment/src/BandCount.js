@@ -1,17 +1,25 @@
-import React from 'react'
-import data from './metal.json'
-import './BandCount.css'
+import React, { Component } from 'react'
 
+class Counter extends Component {
+  constructor(props) {
+    super(props)
 
+    this.state = { count: 0 }
+  }
 
-function BandCount() {
-  return (
-    <div className='BandCount'>
-      <p>Number of Bands 🎧</p>
-      
-    
-    </div>
-  )
+  increment() {
+    this.setState({ count: this.state.count + 1 })
+  }
+
+  render() {
+    return (
+      <div>
+        <h1>{this.count}</h1>
+        <button onClick={(e) => {
+          this.increment()
+        }}>Click</button>
+      </div>
+    )
+  }
 }
-
-export default BandCount
+export default Counter
